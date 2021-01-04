@@ -1,0 +1,48 @@
+{
+  "name": "exquisapp-todolist",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@hapi/boom": "^9.0.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.4.1",
+    "fastify": "^2.11.0",
+    "fastify-cors": "^3.0.1",
+    "fastify-swagger": "^2.5.0",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.8.9",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "popper.js": "^1.16.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0"
+  },
+  "proxy": "http://localhost:4908",
+  "scripts": {
+    "app": "react-scripts start",
+    "server": "node ./server/src/index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start": "npm-run-all -p server app"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
